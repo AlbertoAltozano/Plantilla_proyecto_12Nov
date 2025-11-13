@@ -1,0 +1,81 @@
+---
+title: ""
+format:
+  html:
+    pagetitle: "Inicio"
+listing:
+  - id: grid-desc
+    contents:
+      - "simuladores/**/index.qmd"
+    type: grid
+    include:
+      categories: "Estadística descriptiva"
+    sort: "date desc"
+    grid-columns: 3
+    image-placeholder: assets/placeholder.png
+
+  - id: grid-dist
+    contents:
+      - "simuladores/**/index.qmd"
+    type: grid
+    include:
+      categories: "Distribuciones"
+    sort: "date desc"
+    grid-columns: 3
+    image-placeholder: assets/placeholder.png
+
+  - id: grid-inf
+    contents:
+      - "simuladores/**/index.qmd"
+    type: grid
+    include:
+      categories: "Estadística inferencial"
+    sort: "date desc"
+    grid-columns: 3
+    image-placeholder: assets/placeholder.png
+
+  - id: grid-econ
+    contents:
+      - "simuladores/**/index.qmd"
+    type: grid
+    include:
+      categories: "Econometría"
+    sort: "date desc"
+    grid-columns: 3
+    image-placeholder: assets/placeholder.png
+
+  - id: grid-io
+    contents:
+      - "simuladores/**/index.qmd"
+    type: grid
+    include:
+      categories: "Investigación Operativa"
+    sort: "date desc"
+    grid-columns: 3
+    image-placeholder: assets/placeholder.png
+---
+
+Web desarrollada por el DEIOAC de la Universitat Politècnica de València que ofrece simuladores virtuales para profundizar en conceptos de estadística e investigación operativa. <code style="color : red">\[WEB EN PRUEBAS\]</code>
+
+## Estadística descriptiva
+
+TBD
+
+## Distribuciones
+
+::: {#grid-dist}
+:::
+
+## Estadística inferencial
+
+::: {#grid-inf}
+:::
+
+## Econometría
+
+TBD
+
+## Investigación Operativa
+
+::: {#grid-io}
+:::

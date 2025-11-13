@@ -1,0 +1,32 @@
+project:
+  type: website
+
+website:
+  title: "STATIO"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Inicio
+      - href: about.qmd
+        text: About
+      - text: Simuladores
+        menu:
+          - text: Estadística descriptiva
+            href: categorias/estadistica-descriptiva.qmd
+          - text: Distribuciones
+            href: categorias/distribuciones.qmd
+          - text: Estadística inferencial
+            href: categorias/estadistica-inferencial.qmd
+          - text: Econometría
+            href: categorias/econometria.qmd
+          - text: Investigación operativa
+            href: categorias/investigacion-operativa.qmd
+
+format:
+  html:
+    theme: lumen
+    css: styles.css
+    toc: true
+
+editor: visual
+
