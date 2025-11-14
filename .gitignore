@@ -5,6 +5,7 @@
 .DS_Store
 .quarto
 renv/library/
+*.Rproj
 
 /.quarto/
 **/*.quarto_ipynb
