@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# Exclude anything with appsite in the path
+RewriteCond %{REQUEST_URI} /appsite [NC]
+RewriteRule ^ - [L]
+
+# Exclude only these specific root directories
+RewriteCond %{REQUEST_URI} ^/(renv|cgi-bin)/ [NC]
+RewriteRule ^ - [L]
+
+# Rewrite root
+RewriteRule ^$ _site/index.html [L]
+
+# Rewrite everything else to _site
+RewriteCond %{REQUEST_URI} !^/_site/
+RewriteRule ^(.*)$ _site/$1 [L]
